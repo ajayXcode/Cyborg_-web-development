@@ -2,6 +2,11 @@
 
 A premium, highly-responsive landing page showcasing a futuristic "cyborg" aesthetic. Built with modern web technologies and a focus on sleek, minimalist design, high-end typography, and subtle ambient animations.
 
+## Live Demo
+
+Check out the interactive demo of the landing page in action:
+[Watch Demo on Google Drive](https://drive.google.com/file/d/1lEkzJI25JnpJVMJJFsjE4_Vp2cWX7pyO/view?usp=sharing)
+
 ## Features
 
 - **Premium UI/UX**: Minimalist, Apple-esque futuristic design with extreme negative space and refined typography.
@@ -49,11 +54,6 @@ To run this project locally on your machine:
 
 - **Typography**: Uses `Space Grotesk` for high-impact, futuristic headings and `Inter` for clean, legible body text.
 - **Color Palette**: Deep blacks (`#030303`), sleek surface greys (`#0a0a0a`), and a piercing electric blue accent (`#00E5FF`).
-
-## Live Demo
-
-Check out the interactive demo of the landing page in action:
-[Watch Demo on Google Drive](https://drive.google.com/file/d/1lEkzJI25JnpJVMJJFsjE4_Vp2cWX7pyO/view?usp=sharing)
 
 ## License
 
