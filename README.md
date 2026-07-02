@@ -50,6 +50,15 @@ To run this project locally on your machine:
 - **Typography**: Uses `Space Grotesk` for high-impact, futuristic headings and `Inter` for clean, legible body text.
 - **Color Palette**: Deep blacks (`#030303`), sleek surface greys (`#0a0a0a`), and a piercing electric blue accent (`#00E5FF`).
 
+## Live Demo
+
+Check out the interactive demo of the landing page in action:
+[Watch Demo on Google Drive](https://drive.google.com/file/d/1lEkzJI25JnpJVMJJFsjE4_Vp2cWX7pyO/view?usp=sharing)
+
 ## License
 
 This project is open-source and available under the MIT License.
+
+---
+**Connect with me:**
+- Instagram: [@aajay.ai](https://www.instagram.com/aajay.ai/)
