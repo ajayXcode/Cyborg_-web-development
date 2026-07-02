@@ -2,30 +2,21 @@ import './style.css'
 
 // Typing effect for hero subtitle
 const typingText = document.getElementById('typing-text');
-const textToType = "Augmenting reality. Bridging the gap between flesh and machine. Welcome to the next stage of human evolution.";
+const textToType = "The next evolution of cybernetic enhancement. Seamless integration, infinite potential.";
 let charIndex = 0;
+typingText.textContent = ''; // Clear initial text
 
 function typeText() {
   if (charIndex < textToType.length) {
     typingText.textContent += textToType.charAt(charIndex);
     charIndex++;
-    // Randomize typing speed for more realistic effect
-    const delay = Math.random() * 50 + 20; 
+    const delay = Math.random() * 30 + 30; // Faster, smoother typing
     setTimeout(typeText, delay);
-  } else {
-    // Add blinking cursor at the end
-    setInterval(() => {
-      if (typingText.textContent.endsWith('_')) {
-        typingText.textContent = typingText.textContent.slice(0, -1);
-      } else {
-        typingText.textContent += '_';
-      }
-    }, 500);
   }
 }
 
 // Start typing effect after a short delay
-setTimeout(typeText, 1000);
+setTimeout(typeText, 800);
 
 // Scroll Reveal using Intersection Observer
 const observerOptions = {
@@ -45,20 +36,9 @@ const observer = new IntersectionObserver((entries, observer) => {
 }, observerOptions);
 
 // Apply reveal to cards
-document.querySelectorAll('.cyber-card').forEach((card, index) => {
+document.querySelectorAll('.premium-card').forEach((card, index) => {
   card.style.opacity = 0;
-  card.style.transform = 'translateY(50px)';
-  card.style.transition = `all 0.6s ease ${index * 0.2}s`;
+  card.style.transform = 'translateY(30px)';
+  card.style.transition = `all 0.8s cubic-bezier(0.25, 1, 0.5, 1) ${index * 0.15}s`;
   observer.observe(card);
 });
-
-// Randomize data stream hex codes
-const dataBlocks = document.querySelectorAll('.data-stream div');
-setInterval(() => {
-  dataBlocks.forEach((block, index) => {
-    if (index < 3) {
-      const randomHex = Math.floor(Math.random()*16777215).toString(16).toUpperCase();
-      block.textContent = `DATA_BLOCK_0${index + 1}: 0x${randomHex.padStart(4, '0')}`;
-    }
-  });
-}, 2000);

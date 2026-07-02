@@ -4,101 +4,148 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CYBORG // NEXUS</title>
-    <!-- Google Fonts for cyborg aesthetic -->
+    <title>NEXUS | Augmentation</title>
+    <!-- Premium Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!-- Background overlay for grid and grid lines -->
-    <div class="cyber-grid"></div>
-    <div class="scanlines"></div>
+    
+    <!-- Ambient Background -->
+    <div class="ambient-bg">
+      <div class="ambient-orb orb-primary"></div>
+      <div class="ambient-orb orb-secondary"></div>
+    </div>
+    
+    <div class="noise-overlay"></div>
 
     <!-- Navigation -->
-    <nav class="cyber-nav">
+    <nav class="premium-nav">
       <div class="nav-logo">
-        <span class="glitch" data-text="CYBORG">CYBORG</span><span class="accent">//NEXUS</span>
+        NEXUS<span class="logo-dot">.</span>
       </div>
       <div class="nav-links">
-        <a href="#about" class="cyber-link">SYSTEM.INFO</a>
-        <a href="#features" class="cyber-link">UPGRADES</a>
-        <a href="#contact" class="cyber-button">INITIATE</a>
+        <a href="#vision" class="nav-link">VISION</a>
+        <a href="#technology" class="nav-link">TECHNOLOGY</a>
+        <a href="#specs" class="nav-link">SPECS</a>
+      </div>
+      <div class="nav-action">
+        <a href="#preorder" class="btn-outline">PRE-ORDER</a>
       </div>
     </nav>
 
-    <!-- Main Hero Section -->
-    <main class="hero">
+    <!-- Main Hero -->
+    <main class="hero-premium">
       <div class="hero-content">
-        <h2 class="sys-status">SYS.STATUS: <span class="status-ok">ONLINE</span></h2>
-        <h1 class="hero-title glitch" data-text="EVOLVE BEYOND HUMAN">EVOLVE BEYOND HUMAN</h1>
-        <p class="hero-subtitle" id="typing-text"></p>
+        <div class="hero-badge">
+          <span class="badge-line"></span>
+          <span class="badge-text">PROTOTYPE 04 ONLINE</span>
+        </div>
         
-        <div class="cta-container">
-          <button class="cyber-btn primary">
-            <span class="btn-text">EXPLORE UPGRADES</span>
-            <span class="btn-glitch"></span>
-            <span class="btn-tag">R-89</span>
-          </button>
-          <button class="cyber-btn secondary">
-            <span class="btn-text">READ LOGS</span>
+        <h1 class="hero-title">
+          <span class="title-line">REDEFINE</span>
+          <span class="title-line">HUMANITY.</span>
+        </h1>
+        
+        <p class="hero-description" id="typing-text">
+          The next evolution of cybernetic enhancement. Seamless integration, infinite potential.
+        </p>
+        
+        <div class="hero-actions">
+          <button class="btn-primary">
+            <span class="btn-bg"></span>
+            <span class="btn-text">DISCOVER NEXUS</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
           </button>
         </div>
       </div>
-      
-      <!-- Graphic elements -->
-      <div class="cyber-graphic">
-        <div class="hud-circle"></div>
-        <div class="hud-circle inner"></div>
-        <div class="hud-circle dotted"></div>
-        <div class="crosshair"></div>
-        <div class="data-stream">
-          <div>DATA_BLOCK_01: 0x9F4A</div>
-          <div>DATA_BLOCK_02: 0x1A2B</div>
-          <div>DATA_BLOCK_03: 0xFF00</div>
-          <div>UPLOADING... 99%</div>
+
+      <!-- Minimalist Graphic / UI overlay -->
+      <div class="hero-visual">
+        <div class="glass-panel">
+          <div class="panel-header">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="panel-title">BIOMETRICS</div>
+          </div>
+          <div class="panel-body">
+            <div class="stat-row">
+              <span class="stat-label">NEURAL SYNC</span>
+              <span class="stat-value">99.8%</span>
+            </div>
+            <div class="stat-bar"><div class="stat-fill" style="width: 99.8%"></div></div>
+            
+            <div class="stat-row">
+              <span class="stat-label">LATENCY</span>
+              <span class="stat-value">0.2ms</span>
+            </div>
+            <div class="stat-bar"><div class="stat-fill" style="width: 95%"></div></div>
+            
+            <div class="stat-row">
+              <span class="stat-label">CORTEX LOAD</span>
+              <span class="stat-value">STABLE</span>
+            </div>
+            <div class="pulse-wave">
+              <div class="wave"></div><div class="wave offset"></div><div class="wave"></div><div class="wave offset"></div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
-      <h2 class="section-title">NEURAL <span class="accent">ENHANCEMENTS</span></h2>
-      <div class="features-grid">
+    <!-- Technology Section -->
+    <section id="technology" class="tech-section">
+      <div class="section-heading">
+        <h2 class="subtitle">PRECISION ENGINEERING</h2>
+        <h3 class="title">BEYOND BIOLOGY</h3>
+      </div>
+      
+      <div class="cards-container">
         
-        <div class="cyber-card">
-          <div class="card-corner top-left"></div>
-          <div class="card-corner bottom-right"></div>
-          <div class="card-icon">⚡</div>
-          <h3>OPTIC KINETICS</h3>
-          <p>Enhanced visual cortex integration providing real-time data overlays and infrared tracking capabilities.</p>
-          <div class="card-footer">
-            <span class="tech-id">TECH.ID: O-992</span>
-            <div class="bar-container"><div class="bar" style="width: 85%"></div></div>
+        <div class="premium-card">
+          <div class="card-gradient"></div>
+          <div class="card-content">
+            <div class="icon-ring">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/>
+                <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"/>
+                <path d="M12 2V4M12 20V22M4 12H2M22 12H20M19.0711 19.0711L17.6569 17.6569M6.34315 6.34315L4.92893 4.92893M19.0711 4.92893L17.6569 6.34315M6.34315 17.6569L4.92893 19.0711"/>
+              </svg>
+            </div>
+            <h4 class="card-title">OPTIC AUGMENTATION</h4>
+            <p class="card-desc">Military-grade synthetic retinas providing 8K resolution, dynamic spectrum analysis, and instantaneous focus adjustment.</p>
           </div>
         </div>
 
-        <div class="cyber-card active">
-          <div class="card-corner top-left"></div>
-          <div class="card-corner bottom-right"></div>
-          <div class="card-icon">🧠</div>
-          <h3>NEURO-LINK V2</h3>
-          <p>Direct brain-to-machine interface offering near-instantaneous processing and localized network access.</p>
-          <div class="card-footer">
-            <span class="tech-id">TECH.ID: N-401</span>
-            <div class="bar-container"><div class="bar" style="width: 100%"></div></div>
+        <div class="premium-card">
+          <div class="card-gradient"></div>
+          <div class="card-content">
+            <div class="icon-ring">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 12C12 12 10 16 7 16C4 16 2 14 2 12C2 10 4 8 7 8C10 8 12 12 12 12ZM12 12C12 12 14 8 17 8C20 8 22 10 22 12C22 14 20 16 17 16C14 16 12 12 12 12Z"/>
+                <path d="M12 2L12 22"/>
+              </svg>
+            </div>
+            <h4 class="card-title">NEURAL CORTEX V3</h4>
+            <p class="card-desc">Direct interface with the central nervous system, unlocking subconscious processing capabilities and localized cloud computing.</p>
           </div>
         </div>
 
-        <div class="cyber-card">
-          <div class="card-corner top-left"></div>
-          <div class="card-corner bottom-right"></div>
-          <div class="card-icon">🦾</div>
-          <h3>SYNTHETIC MUSCLE</h3>
-          <p>Carbon-nanotube woven synthetic tissue that increases physical load-bearing capacity by 400%.</p>
-          <div class="card-footer">
-            <span class="tech-id">TECH.ID: S-110</span>
-            <div class="bar-container"><div class="bar" style="width: 65%"></div></div>
+        <div class="premium-card">
+          <div class="card-gradient"></div>
+          <div class="card-content">
+            <div class="icon-ring">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8Z"/>
+                <path d="M7 12L10.5 15.5L17 9"/>
+              </svg>
+            </div>
+            <h4 class="card-title">CARBON WEAVE</h4>
+            <p class="card-desc">Subdermal carbon-nanotube plating that absorbs kinetic impact while maintaining the exact weight and texture of human tissue.</p>
           </div>
         </div>
 
@@ -106,14 +153,16 @@
     </section>
 
     <!-- Footer -->
-    <footer class="cyber-footer">
-      <div class="footer-content">
-        <p>TRANSMISSION SECURE. &copy; 2084 CYBORG // NEXUS INDUSTRIES.</p>
-        <div class="status-bars">
-          <div class="status-block"></div>
-          <div class="status-block active"></div>
-          <div class="status-block active"></div>
-          <div class="status-block"></div>
+    <footer class="premium-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">NEXUS<span class="logo-dot">.</span></div>
+          <p>Elevating the human condition since 2084.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#">Privacy Protocol</a>
+          <a href="#">Terms of Augmentation</a>
+          <a href="#">Support</a>
         </div>
       </div>
     </footer>
